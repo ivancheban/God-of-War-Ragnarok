@@ -1,0 +1,17 @@
+$primary-font: #{"Rubik", sans-serif};
+$secondary-font: #{"Inter", sans-serif};
+
+$colors:(
+    'nav-color': rgba(255, 255, 255, 0.5),
+    'black-color':#1c2023,
+    'dark-color':#30373f,
+    'purple-color':#8856d9,
+    'turqoise-color':#a9c7c7,
+    'gray-color':#8c96a0,
+    'red-color':#ff4136,
+    'white-color':#fff
+);
+
+@function getcolor($key) {
+    @return map-get($colors, $key);
+}
