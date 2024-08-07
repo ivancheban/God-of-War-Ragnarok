@@ -5,18 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/style.css">
     <title>God of War Ragnarok</title>
 </head>
 <body>
-    <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/editions.html"></include>
-    <include src="./partials/dual-sense.html"></include>
-    <include src="./partials/trailer.html"></include>
-    <include src="./partials/explore.html"></include>
-    <include src="./partials/news.html"></include>
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/modal.html"></include>
+    <!-- <include src="./partials/header.html"></include> -->
+    <header class="main-header" id="header">
+        <div class="inner-container">
+          <section class="header">
+        
+            <!-- <button class="header-menu" data-open-menu>
+              <svg class="header-menu__svg">
+                <use href="../images/small-items/burger-menu.svg"></use>
+              </svg>
+            </button> -->
+      
+            <nav class="header-navigation">
+              <ul class="navigation-list">
+                <li class="navigation-list__item">
+                  <a href="#editions" class="navigation-list__link">Editions</a>
+                </li>
+                <li class="navigation-list__item">
+                  <a href="#dual-sense" class="navigation-list__link">Controller</a>
+                </li>
+                <li class="navigation-list__item">
+                  <a href="#trailer" class="navigation-list__link">About Game</a>
+                </li>
+                <li class="navigation-list__item">
+                  <a href="#explore" class="navigation-list__link">Explore</a>
+                </li>
+                <li class="navigation-list__item">
+                  <a href="#news" class="navigation-list__link">News</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a href="#faq" class="navigation-list__link">Faq</a>
+                  </li>
+              </ul>
+            </nav>
+    <!-- swfefew -->
+            <p class="header-language"> English
+                <svg class="header-language__svg">
+                    <use href="../images/small-items/nav-arrow.svg"></use>
+                </svg>
+            </p>
+    
+            <div class="header-countdown">
+                <p class="header-countdown__realease">Realease:</p>
+                <ul class="countdown-list">
+                    <li class="countdown-list__item">20</li>
+                    <li class="countdown-list__item">20</li>
+                    <li class="countdown-list__item">59</li>
+                </ul>
+
+                <ul class="countdown-list-article">
+                  <li class="countdown-list__item">D</li>
+                  <li class="countdown-list__item">H</li>
+                  <li class="countdown-list__item">M</li>
+                </ul>
+              </div>
+        
+            </section>
+        </div>
+      </header>
+    <include src="./partials/hero"></include>
+    <include src="./partials/editions"></include>
+    <include src="./partials/dual-sense"></include>
+    <include src="./partials/trailer"></include>
+    <include src="./partials/explore"></include>
+    <include src="./partials/news"></include>
+    <include src="./partials/footer"></include>
+    <include src="./partials/modal"></include>
     <script src="./script.js"></script>
 
 </body>
