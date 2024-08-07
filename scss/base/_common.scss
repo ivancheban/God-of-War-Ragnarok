@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif, 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: get-color('black-color');
+  }
+  .is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
