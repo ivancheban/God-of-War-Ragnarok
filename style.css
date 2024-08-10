@@ -3,28 +3,32 @@ body, html {
   padding: 0;
   height: 100%;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: black;
+}
 .header {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
   align-items: center;
   width: 100%;
-  padding-top: 50.35px;
-  background-image: url('./images/hero/kratos-hero.jpg');
-  background-size: cover;
-  background-position: top center; 
-  background-repeat: no-repeat;
-  height: 200px; 
-  position: relative;
-  z-index: 10;
-  margin: 0; 
+  padding-top: 46.8px;
 }
 
 .main-header {
-  background: transparent; 
+  background-image: url('./images/hero/kratos-hero.jpg');
+  background-size: 1364px 764px;
+  background-position: right; 
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: 100%;
 }
-
+.inner-container{
+  margin-left: 282px;
+  margin-right: 217px;
+}
 .header-menu {
   display: flex;
   flex-direction: row;
@@ -40,7 +44,9 @@ body, html {
   margin-top: 34px;
   margin-right: -30px;
 }
-
+.header-language{
+  margin-right: 426px;
+}
 .header-countdown,
 .countdown-list {
   display: flex;
@@ -58,9 +64,9 @@ body, html {
 
 .navigation-list {
   display: flex;
-  padding-top: 46.77px;
   column-gap: 31px;
   align-items: center;
+  margin-right: 32px;
 }
 
 .navigation-list__item {
@@ -100,17 +106,7 @@ li {
 /* HERO */
 
 .hero {
-  padding: 0 109px 46.8px 275px; 
-  padding-right: 109px;
-  padding-bottom: 46.8px;
-  padding-left: 275px;
-  background-image: url('./images/hero/kratos-hero.jpg');
-  background-size: cover;
-  background-position: bottom center; 
-  background-repeat: no-repeat;
-  width: 100%;
-  height: calc(100vh - 200px); 
-  margin: 0
+ 
 }
 
 .hero__title {
