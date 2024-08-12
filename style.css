@@ -104,37 +104,149 @@ li {
 .countdown-list-article li {
   font-size: 16px;
 }
-
 /* HERO */
 
 .hero {
- margin-top: 112px;
+  margin-top: 112px;
+ }
+ 
+ .hero__title {
+   font-weight: 600;
+   font-size: 100px;
+   line-height: 100%;
+   color: #fff;
+   margin-bottom: 26.8px; 
+ }
+ 
+ .hero__paragr {
+   margin-bottom: 49.4px; 
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 150%;
+   color: #a9c7c7;
+ }
+ 
+ .hero__btn {
+   width: 145px;
+   height: 41px;
+   border-radius: 6px;
+   font-weight: 500;
+   font-size: 16px;
+   text-transform: uppercase;
+   color: #fff;
+   background-color: #8856d9;
+   display: block;
+ }
+ 
+/* Editions */
+
+.editions {
+  margin-top: 53.7px;
 }
 
-.hero__title {
+.editions-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editions-title {
+  font-family: "Rubik", "Inter", sans-serif;
   font-weight: 600;
-  font-size: 100px;
-  line-height: 100%;
+  font-size: 40px;
   color: #fff;
-  margin-bottom: 26.8px; 
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-.hero__paragr {
-  margin-bottom: 49.4px; 
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  color: #a9c7c7;
+.editions-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 16px; 
 }
 
-.hero__btn {
-  width: 145px;
-  height: 41px;
+.editions-list__item {
+  width: 350px;
+  height: 458px;
+  background: linear-gradient(180deg, #141615 0%, #1c2023 100%); 
   border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.editions-list__img {
+  border-radius: 6px;
+  width: 316px;
+  height: 172px;
+  
+}
+
+.editions-list__title {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 20.9px;
+}
+
+.editions-list__device {
+  font-family: "Rubik", "Inter", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  color: #a9c7c7;
+  padding-top: 14.93px;
+}
+
+.editions-list-characteristics {
+  width: 100%;
+  height: auto;
+  padding-top: 31.84px;
+  
+  align-items: center;
+}
+
+.editions-list-characteristics__item {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8c96a0;
+  margin-bottom: 11.94px;
+}
+
+.editions-list-characteristics__item:nth-child(3) {
+  margin-bottom: 5.97px; 
+}
+
+.editions-list__price {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  color: #fff;
+  margin-bottom: 13.93px;
+  padding-left: 270px;
+}
+
+.editions-list__btn {
+  font-family: "Rubik", "Inter", sans-serif;
+  border-radius: 6px;
+  width: 96px;
+  height: 29.85px;
+  background-color: #8856d9;
+  font-weight: 500;
+  font-size: 13px;
   text-transform: uppercase;
   color: #fff;
-  background-color: #8856d9;
-  display: block;
+  text-align: center;
+  margin-left: 237px;
 }
+
+
+
+
+
+
+
+
