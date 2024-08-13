@@ -175,6 +175,7 @@ li {
   flex-direction: column;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .editions-list__img {
@@ -204,7 +205,6 @@ li {
   width: 100%;
   height: auto;
   padding-top: 31.84px;
-  
   align-items: center;
 }
 
@@ -240,7 +240,88 @@ li {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  margin-left: 237px;
+  position: absolute;
+  bottom: 16.92px; 
+  left: 237px; 
+}
+
+/* DUAL-SENSE */
+
+.dual-sense {
+  margin-top: 70.65px;
+}
+
+.dual-sense-title {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 65.67px;
+  text-align: center;
+}
+
+.dual-sense-first-paragr {
+font-family: "Rubik", "Inter", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: #a9c7c7;
+padding-left: 488px;
+margin-bottom: 21.89px;
+}
+
+.dual-sense-second-paragr {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #a9c7c7;
+  padding-left: 488px;
+  margin-bottom: 32.33px;
+}
+
+.purple-text {
+  font-weight: 700;
+  color:#8856d9;
+}
+
+.red-text {
+  font-weight: 700;
+  color: #ff4136;
+}
+
+.dual-sense-price {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+}
+
+.dual-sense-price-btn-container {
+  display: flex;
+  align-items: center; 
+  padding-left: 488px;
+}
+
+.dual-sense-btn {
+  margin-left: 33px; 
+  border-radius: 6px;
+  width: 274px;
+  height: 46px;
+  background: #ff4136;
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.dual-sense-img {
+  width: 340px;
+  height: 309px;
+ margin-left: 1065px;
+margin-top: -1000px;
+margin-right: -1000px;
 }
 
 
