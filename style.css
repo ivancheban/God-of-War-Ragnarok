@@ -324,7 +324,54 @@ margin-top: -1000px;
 margin-right: -1000px;
 }
 
+/* TRAILER */
 
+.trailer {
+  margin-top: 92.67px;
+}
+
+.trailer-title {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 31.84px;
+}
+
+.video-div {
+  width: 100%;
+  height: 944px;
+  background: url("/images/trailer/trailer-bg.jpg");
+  opacity: 0.7;
+}
+
+.trailer-text {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 500;
+font-size: 50px;
+line-height: 78%;
+color: #fff;
+text-align: center;
+padding-top: 457.73px;
+padding-left: 794px;
+padding-right: 722px;
+}
+
+.trailer-btn {
+  border-radius: 6px;
+width: 93px;
+height: 33px;
+background: #30373f;
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+color: #fff;
+margin-left: 945px;
+margin-top: 28.86px;
+}
+
+/* MODAL */
 
 
 
