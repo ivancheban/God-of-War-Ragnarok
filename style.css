@@ -373,6 +373,158 @@ margin-top: 28.86px;
 
 /* MODAL */
 
+.modal-menu-inner-container {
+  border-radius: 12px;
+  width: 470px;
+  height: 565px;
+  background: linear-gradient(180deg, rgba(79, 96, 152, 0) 63.61%, #30373f 100%);
+  margin: 0 auto; 
+}
+
+.modal-menu {
+  margin-top: 100px;
+}
+
+.modal-menu__text {
+  padding-top: 31.84px;
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 167%;
+  color: #fff;
+  text-align: center;
+}
+
+.modal-menu__purple-text {
+  font-family: "Rubik", "Inter", sans-serif;
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+color: #8856d9;
+}
+
+.modal-menu-list__label {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 6.97px; 
+  display: block;
+  padding-left: 32px;
+}
+
+.modal-menu-list__label--shifted {
+  padding-right: 350px;
+  padding-left: 32px;
+}
+
+
+.modal-list__input {
+  border-radius: 6px;
+  width: 406px;
+  height: 44px;
+  background: #30373f;
+  margin-bottom: 6.97px; 
+}
+
+.modal-menu-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6.97px;
+  justify-content: center; 
+}
+
+.modal-menu-list__item--row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-list__input-small {
+  border-radius: 6px;
+  width: 190px;
+  height: 44.78px;
+  background: #30373f;
+  margin-bottom: 6.97px; 
+  text-align: center;
+  margin-left: 32px;
+}
+
+.modal-menu-list__item--row > div:nth-child(2) .modal-list__input-small {
+  margin-right: 32px;
+}
+
+.modal-menu-accept__checkbox {
+  border-radius: 6px;
+  width: 25px;
+  height: 24px;
+  background: #30373f;
+  margin-left: 32px;
+}
+
+.modal-menu-accept {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 45px; /* Зменшено з 57px до 45px для вирівнювання тексту */
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -12px; /* Відступ на 12px лівіше */
+}
+
+.modal-menu-accept__link {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #ff4136;
+}
+
+.modal-menu__paragr {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #d9d9d9;
+  padding-top: 6.97px;
+  margin-bottom: 12.94px;
+  padding-left: 31px;
+}
+
+.modal-menu__summa {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  margin-left: 32px; 
+}
+
+.modal-menu__price {
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 368px; 
+  margin-top: -20px; 
+  
+}
+
+.modal-menu__btn {
+  border-radius: 6px;
+  width: 406px;
+  height: 39px;
+  background: #8856d9;
+  font-family: "Rubik", "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 18.92px auto 0; 
+  display: block;
+  text-align: center;
+}
+
 
 
 

@@ -1,43 +1,43 @@
-<form class="modal-menu">
-    <button class="modal-menu__btn">
-        <svg class="modal-menu__svg">
-            <use href="../images/small-items/cross-modal.svg"></use>
-        </svg>
-    </button>
-    <h2 class="modal-menu__text"><span class="modal-menu__purple-text">GOD OF WAR RAGNAROK</span><br>
-        STANDARD EDITION</h2>
-    <ul class="modal-menu-list">
+<div class="modal-menu-inner-container">
+    <form class="modal-menu">
+      <h2 class="modal-menu__text"><span class="modal-menu__purple-text">GOD OF WAR RAGNAROK</span><br>STANDARD EDITION</h2>
+      <ul class="modal-menu-list">
         <li class="modal-menu-list__item">
-            <label class="modal-list__label">CREDIT CARD:
-                <input type="text" class="modal-list__input" placeholder="0000 0000 0000 0000" required />
-            </label>
+          <label class="modal-menu-list__label modal-menu-list__label--shifted">CREDIT CARD:</label>
+          <input type="text" class="modal-list__input" placeholder="0000 0000 0000 0000" required />
+        </li>
+        <li class="modal-menu-list__item--row">
+          <div>
+            <label class="modal-menu-list__label">EXPIRE:</label>
+            <input type="text" class="modal-list__input-small" placeholder="mm/yy" required />
+          </div>
+          <div>
+            <label class="modal-menu-list__label">CCV:</label>
+            <input type="text" class="modal-list__input-small" placeholder="***" required />
+          </div>
         </li>
         <li class="modal-menu-list__item">
-            <label class="modal-list__label">EXPIRE:
-                <input type="text" class="modal-list__input" placeholder="mm/yy" required />
-            </label>
+          <label class="modal-menu-list__label modal-menu-list__label--shifted">INSTANT:</label>
+          <input type="text" class="modal-list__input" placeholder="John Doe" required />
         </li>
-        <li class="modal-menu-list__item">
-            <label class="modal-list__label">CCV:
-                <input type="text" class="modal-list__input" placeholder="***" required />
-            </label>
-        </li>
-        <li class="modal-menu-list__item">
-            <label class="modal-list__label">INSTANT:
-                <input type="text" class="modal-list__input" placeholder="John Doe" required />
-            </label>
-        </ul>
-            <p class="modal-menu__accept">
-                <input class="modal__checkdox" type="checkbox" required />
-                I agree with the <a class="modal__link" href="#">rules </a>of the site
-            </p>
-            <p class="modal-menu__paragr">
-                Download of this product is subject to the PlayStation Network Terms of Service and<br>
-                 our Software Usage Terms plus any specific additional conditions applying to this<br>
-                  product. If you do not wish to accept these terms, do not download this product. See <br>
-                  Terms of Service for more important information.
-            </p>
-            <h3 class="modal-menu__summa">YOUR TOTAL SUMMA:</h3>
-            <h4 class="modal-menu__price">19.99$</h4>
-            <button class="modal-menu__btn">Buy Now</button>
-</form>
+        
+      </ul>
+      <div class="modal-menu-accept-wrapper">
+        <input class="modal-menu-accept__checkbox" type="checkbox" id="accept" required />
+        <label for="accept" class="modal-menu-accept">
+          I agree with the <a class="modal-menu-accept__link" href="#">rules</a> of the site
+        </label>
+      </div>
+
+      <p class="modal-menu__paragr">
+        Download of this product is subject to the PlayStation Network Terms of Service and<br>
+        our Software Usage Terms plus any specific additional conditions applying to this<br>
+        product. If you do not wish to accept these terms, do not download this product. See<br>
+        Terms of Service for more important information.
+      </p>
+      <h3 class="modal-menu__summa">YOUR TOTAL SUMMA:</h3>
+      <h4 class="modal-menu__price">19.99$</h4>
+      <button class="modal-menu__btn">Buy Now</button>
+    </form>
+  </div>
+  
