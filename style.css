@@ -1,3 +1,4 @@
+/* ////////////////////////////////////// */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sankofa+Display&display=swap');
 body, html {
   margin: 0;
@@ -17,18 +18,40 @@ body{
   width: 100%;
   padding-top: 46.8px;
 }
+.img-container {
+  display: inline-block;
+  position: absolute;
+  width: 1363px;
+height: 764px;
+z-index: -1;
+right: 0px;
+top: 0px;
+}
 
-.main-header {
-  background-image: url('./images/hero/kratos-hero.jpg');
-  background-size: 1364px 764px;
-  background-position: right; 
-  background-repeat: no-repeat; 
+.img-container img {
   width: 100%;
   height: 100%;
+  display: block;
+  box-sizing: 20px;
+}
+
+.img-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: 20px;
+  box-shadow: inset 89px -120px 250px rgba(0, 0, 0, 0.8);
+  pointer-events: none; /* чтобы псевдоэлемент не мешал взаимодействию с изображением */
 }
 .inner-container{
   margin-left: 282px;
   margin-right: 217px;
+}
+.main-header{
+  margin-bottom: 240px;
 }
 .header-menu {
   display: flex;
@@ -142,7 +165,6 @@ li {
 /* Editions */
 
 .editions {
-  margin-top: 53.7px;
 }
 
 .editions-inner-container {
@@ -168,7 +190,6 @@ li {
 
 .editions-list__item {
   width: 350px;
-  height: 458px;
   background: linear-gradient(180deg, #141615 0%, #1c2023 100%); 
   border-radius: 6px;
   padding: 20px;
@@ -207,6 +228,7 @@ li {
   height: auto;
   padding-top: 31.84px;
   align-items: center;
+  margin-bottom: 7px;
 }
 
 .editions-list-characteristics__item {
@@ -221,13 +243,14 @@ li {
   margin-bottom: 5.97px; 
 }
 
+
 .editions-list__price {
   font-family: "Rubik", "Inter", sans-serif;
   font-weight: 700;
   font-size: 19px;
   color: #fff;
   margin-bottom: 13.93px;
-  padding-left: 270px;
+  align-self: flex-end; 
 }
 
 
@@ -240,12 +263,12 @@ li {
   background-color: #8856d9;
   font-weight: 500;
   font-size: 13px;
+  align-self: flex-end;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  position: absolute;
-  bottom: 16.92px; 
-  left: 237px; 
+  bottom: 16.92px;
+
 }
 
 /* DUAL-SENSE */
@@ -458,6 +481,7 @@ color: #8856d9;
   row-gap: 17px;
 }
 
+
 .modal-list__input-small {
   border-radius: 6px;
   height: 44.78px;
@@ -536,19 +560,7 @@ color: #8856d9;
   display: block;
   text-align: center;
 }
-/* news - start */
-.swiper {
-  
-}
 
-.news {
-}
-.news-inner-container {
-}
-.news-title {
-}
-.swiper {
-}
 .swiper-wrapper {
   display: flex;
   column-gap: 20px;
@@ -564,11 +576,13 @@ color: #8856d9;
 .news-left {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .news-left-title {
   display: flex;
   flex-direction: column;
+  row-gap: 8px;
 }
 .news-list__text {
   color: #8856D9;
@@ -584,12 +598,14 @@ color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 24px;
   color:#fff;
 }
 
 .news-right-info {
   display: flex;
   flex-direction: column;
+  row-gap: 19px;
 }
 
 .news-list__date {
@@ -597,6 +613,15 @@ color: #fff;
 .news-list__paragr {
 }
 .news-list__button {
+  background: #8c96a0;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 30px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  align-self: flex-end;
 }
 .swiper-pagination {
 }
@@ -607,10 +632,6 @@ color: #fff;
 .swiper-scrollbar {
 }
 /* news - end */
-
-
-
-
 
 /* keyframes */
 @keyframes moveController {
@@ -624,4 +645,3 @@ color: #fff;
       transform: translateY(0px);
     }
 }
-
