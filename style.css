@@ -370,7 +370,6 @@ animation: moveController 4s infinite ease-in-out;
   width: 100%;
   height: 944px;
   background: url("/images/trailer/trailer-bg.jpg");
-  opacity: 0.7;
 }
 
 .trailer-text {
@@ -561,6 +560,13 @@ color: #8856d9;
   text-align: center;
 }
 
+/* news-start */
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  color: #fff;
+  background-color:#8856D9;
+  border-radius: 6px;
+}
 .swiper-wrapper {
   display: flex;
   column-gap: 20px;
@@ -632,6 +638,136 @@ color: #fff;
 .swiper-scrollbar {
 }
 /* news - end */
+
+/* EXPLORE - START */
+
+
+.explore {
+  margin-top: 88.56px;
+}
+
+.explore-headline, .explore-text {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.explore-headline {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.explore-text {
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 31.84px;
+}
+
+.explore-inner-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 104.48px; 
+}
+
+.explore-left {
+  margin-right: 49px; 
+}
+
+.explore-left__img {
+  display: block;
+  margin-left: 530px;
+}
+
+.explore-right {
+  flex: 1;
+}
+
+.explore-list {
+  margin-bottom: 27.86px; 
+}
+
+.explore-list__item {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 240%;
+  color: #fff;
+}
+
+.explore-list__purple-color {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 240%;
+  color: #8856d9;
+}
+
+.explore-list-button {
+  border-radius: 6px;
+  width: 96px;
+  height: 29px;
+  background: #ff4136;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 27.86px;
+}
+
+.explore-price {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+
+.explore-headline-second {
+  margin-top: 113px;
+  font-weight: 500;
+font-size: 18px;
+text-align: center;
+color: #fff;
+}
+
+.explore-price {
+  font-weight: 700;
+font-size: 20px;
+color: #fff;
+margin-top: 20.9px;
+text-align: center;
+}
+
+.explore-left-second {
+  display: flex;
+  align-items: flex-start;
+}
+
+.explore-list-second {
+  margin-left: 562px;
+}
+
+.explore-list-second__item {
+  font-weight: 400;
+font-size: 15px;
+line-height: 240%;
+color: #fff;
+}
+
+.explore-left-second__img {
+  margin-left: 40px; 
+  margin-top: 9.18px; 
+  
+}
+
+.explore-list-second-button {
+  margin-top: 27.86px;
+  border-radius: 6px;
+  width: 96px;
+  height: 29px;
+  background: #ff4136;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 
 /* keyframes */
 @keyframes moveController {
