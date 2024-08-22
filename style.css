@@ -9,6 +9,9 @@ body, html {
   margin: 0;
   padding: 0;
 }
+button{
+  border: none;
+}
 body{
   background: #1c2023;
 }
@@ -43,7 +46,7 @@ top: 0px;
   right: 0;
   bottom: 0;
   box-sizing: 20px;
-  box-shadow: inset 89px -120px 250px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 89px -120px 250px #1c2023;
   pointer-events: none; /* чтобы псевдоэлемент не мешал взаимодействию с изображением */
 }
 .inner-container{
@@ -260,6 +263,8 @@ li {
   border-radius: 6px;
   width: 96px;
   height: 29.85px;
+  cursor: pointer;
+  border: none;
   background-color: #8856d9;
   font-weight: 500;
   font-size: 13px;
@@ -653,7 +658,36 @@ color: #fff;
 
 /* EXPLORE - START */
 
+/* input[checkbox] - start */
+.switch-container,.switch-container-ragnar {
+  width: 54px;
+  height: 31px;
+  display: block;
+  background-color: #555; 
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
 
+.switch-circle,.switch-circle-ragnar {
+  width: 19px;
+  height: 19px;
+  background-color: #8856D9; 
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  transition: left 0.3s ease;
+}
+
+input[type="checkbox"] {
+  display: none; 
+}
+
+input[type="checkbox"]:checked + .switch-container .switch-circle,input[type="checkbox"]:checked + .switch-container-ragnar .switch-circle-ragnar {
+  left: 29px; 
+}
+/* input[checkbox] - start*/
 .explore {
   margin-top: 88.56px;
 }
