@@ -461,6 +461,17 @@ border: none;
 
 /* MODAL */
 
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Затемнення */
+  z-index: 10; /* Повинен бути нижче модального вікна */
+  display: none; /* Прихований за замовчуванням */
+}
+
 .modal-menu-inner-container {
   border-radius: 12px;
   width: 470px;
