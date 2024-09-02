@@ -76,16 +76,23 @@ function runOtherCode() {
 function initializeModal() {
   // Select all "Buy NOW" buttons
   const buyNowButtons = document.querySelectorAll(".editions-list__btn");
+  const modalMenuPrice = document.querySelector('.modal-menu__price');
+  const buttonPrev = document.querySelector('.swiper-button-prev');
+  const buttonNext = document.querySelector('.swiper-button-next');
+  buttonPrev.addEventListener('click',function(){
+    buttonPrev.classList.add('swiper-active-arrow')
+    buttonNext.classList.remove('swiper-active-arrow')
+  })
+
+  buttonNext.addEventListener('click',function(){
+    buttonNext.classList.add('swiper-active-arrow')
+    buttonPrev.classList.remove('swiper-active-arrow')
+  })
 
   // Select the modal container
   const modal = document.querySelector(".modal-menu-inner-container");
   const backdrop = document.querySelector(".modal-backdrop");
   // Function to open the modal
-  function openModal() {
-    modal.style.display = "block";
-    backdrop.style.display = "block";
-  }
-
   // Function to close the modal
   function closeModal() {
     modal.style.display = "none";
@@ -94,7 +101,12 @@ function initializeModal() {
 
   // Attach click event to each "Buy NOW" button
   buyNowButtons.forEach((button) => {
-    button.addEventListener("click", openModal);
+    button.addEventListener("click", function(){
+      modalMenuPrice.textContent = button.previousElementSibling.textContent;
+      modal.style.display = "block";
+      backdrop.style.display = "block";
+    });
+    
   });
 
   // Close modal when clicking outside of it or on a close button

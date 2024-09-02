@@ -494,7 +494,17 @@ border: none;
   background: url(/images/modal/kratos-atreus-modal.png) no-repeat center/cover;
   border-radius: 12px;
   padding-bottom: 20px;
+padding-top: 10px;
+}
 
+.modal-close-btn {
+  font-weight: 400;
+font-size: 26px;
+text-align: right;
+color: #d9d9d9;
+margin-top: 6px;
+margin-right: -10px;
+cursor: pointer;
 }
 
 .modal-menu__text {
@@ -647,10 +657,15 @@ color: #8856d9;
 
 .swiper-button-prev:after, .swiper-button-next:after {
   color: #fff;
-  background-color:#8856D9;
+  background-color:#8C96A0;
   border-radius: 6px;
   padding: 8px 12px;
   font-size: 16px;
+  transition: all .4s;
+}
+
+.swiper-active-arrow::after {
+  background-color:#8856D9;
 }
 .swiper-wrapper {
   display: flex;
