@@ -118,3 +118,22 @@ function initializeModal() {
     }
   });
 }
+
+// script for a faq section
+
+document.querySelectorAll('.faq-show-answer').forEach(faq => {
+  faq.addEventListener('click', () => {
+      const answer = faq.nextElementSibling.nextElementSibling.nextElementSibling; // choosing the paragraph
+      const faqItem = faq.parentElement; // selecting the parent node
+
+      // making toogle active
+      faqItem.classList.toggle('active');
+
+      // showing or hiding elements
+      if (answer.style.display === 'none' || answer.style.display === '') {
+          answer.style.display = 'block';
+      } else {
+          answer.style.display = 'none';
+      }
+  });
+});
