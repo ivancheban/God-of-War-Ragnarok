@@ -117,23 +117,34 @@ function initializeModal() {
       closeModal();
     }
   });
+  // faq - start
+  // script for a faq section
+
+// document.querySelectorAll('.faq-show-answer').forEach(faq => {
+//   faq.addEventListener('click', () => {
+//       const answer = faq.nextElementSibling.nextElementSibling; 
+//       console.log(answer)// choosing the paragraph
+//       const faqItem = faq.parentElement; // selecting the parent node
+
+//       // making toogle active
+//       faqItem.classList.toggle('active');
+
+//       // showing or hiding elements
+//       if (answer.style.display === 'none' || answer.style.display === '') {
+//           answer.style.display = 'block';
+//       } else {
+//           answer.style.display = 'none';
+//       }
+//   });
+// });
+  // faq - end
+  // faq(original) - start
+  const buttonPlus = document.querySelectorAll('.faq-button');
+  console.log(buttonPlus)
+  buttonPlus.forEach(function(element,index){
+    element.addEventListener('click', function(){
+      element.parentElement.nextElementSibling.nextElementSibling.classList.toggle('faq-paragr-active');
+    })
+  })
+  // faq(original) - end
 }
-
-// script for a faq section
-
-document.querySelectorAll('.faq-show-answer').forEach(faq => {
-  faq.addEventListener('click', () => {
-      const answer = faq.nextElementSibling.nextElementSibling.nextElementSibling; // choosing the paragraph
-      const faqItem = faq.parentElement; // selecting the parent node
-
-      // making toogle active
-      faqItem.classList.toggle('active');
-
-      // showing or hiding elements
-      if (answer.style.display === 'none' || answer.style.display === '') {
-          answer.style.display = 'block';
-      } else {
-          answer.style.display = 'none';
-      }
-  });
-});
