@@ -140,10 +140,16 @@ function initializeModal() {
   // faq - end
   // faq(original) - start
   const buttonPlus = document.querySelectorAll('.faq-button');
+
+  const faqItem = document.querySelectorAll('.faq-item')
+
   console.log(buttonPlus)
   buttonPlus.forEach(function(element,index){
     element.addEventListener('click', function(){
       element.parentElement.nextElementSibling.nextElementSibling.classList.toggle('faq-paragr-active');
+      faqItem.forEach(function(element){
+        element.classList.toggle('active')
+      })
     })
   })
   // faq(original) - end
@@ -201,4 +207,32 @@ function initializeModal() {
     }
   })
   //explore - end
+  // timer - start
+  const countdownListItem = document.querySelectorAll('.countdown-list__item')
+  let countDownDate = new Date("Jan 5, 2025 15:37:25").getTime();
+
+  // Update the count down every 1 second
+  let x = setInterval(function() {
+  
+    // Get today's date and time
+    let now = new Date().getTime();
+  
+    // Find the distance between now and the count down date
+    let distance = countDownDate - now;
+  
+    // Time calculations for days, hours, minutes and seconds
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const timeArr = [days,hours,minutes]
+    countdownListItem.forEach(function(element,index){
+      element.textContent = timeArr[index]
+    })
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  // timer - end
 }
