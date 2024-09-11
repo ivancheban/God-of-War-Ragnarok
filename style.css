@@ -134,7 +134,7 @@ top: 0px;
   align-items: center;
 }
 
-.countdown-list__item {
+.countdown-list__item,.countdown-list__item-info {
   font-weight: 700;
   font-size: 40px;
   color: #a9c7c7;
@@ -841,7 +841,10 @@ input[type="checkbox"]:checked + .switch-container .switch-circle,input[type="ch
 .explore-right {
   flex: 1;
 }
-
+.explore-right-second{
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
 .explore-list {
   margin-bottom: 27.86px; 
 }
@@ -955,6 +958,7 @@ color: #fff;
 
 .faq-purple-stick {
   margin: 10px 0;
+  width: 886px;
 }
 
 .faq-paragr {
