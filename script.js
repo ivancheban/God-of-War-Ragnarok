@@ -175,28 +175,28 @@ function initializeModal() {
     }
   })
 
-  const standard = document.querySelector('.standard')
+  const standard = document.querySelector('.standart')
   const limited = document.querySelector('.limited')
 
   const switchRagnarContainer = document.querySelector(".switch-container-ragnar")
-  const exploreCharacteristicsList = document.querySelector(".switch-list__char")
+  const exploreCharacteristicsList = document.querySelectorAll(".explore-list__char")
   const limitedSettings = ['PS5', '20.4.2018', 'Sony Interactive Entertainment Europe', 'Action, Adventure', 'English, Polish, Russian',  'English, Dutch, Polish, Russian, Turkish']
   const firstLimitedSettings = ['PS4', '7.12.2022', 'Xbox Game Studios', 'Ubisoft', 'Italian, Chineese, Ukrainian', 'Arabic, Spanish, German, Indonesian, Hindi']
 
-  let counterFirst = 0;
+  let counterFirst = 1;
   switchRagnarContainer.addEventListener('click', function(){
     counterFirst++
-    if (counter % 2 === 0){
+    if (counterFirst % 2 === 0){
       standard.classList.remove('switch-active')
       limited.classList.add('switch-active')
       exploreCharacteristicsList.forEach(function(element,index){
-        element.textContent = limitedSettings[index]
+        element.textContent = firstLimitedSettings[index]
       })
     } else {
-      recommended.classList.remove('switch-active')
-      minimum.classList.add('switch-active')
-      exploreList.forEach(function(element,index){
-        element.textContent = firstLimitedSettings[index]
+      limited.classList.remove('switch-active')
+      standard.classList.add('switch-active')
+      exploreCharacteristicsList.forEach(function(element,index){
+        element.textContent = limitedSettings[index]
       })
     }
   })
