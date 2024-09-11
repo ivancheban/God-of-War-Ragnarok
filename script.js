@@ -147,4 +147,58 @@ function initializeModal() {
     })
   })
   // faq(original) - end
+
+  //explore - start
+  const minimum = document.querySelector('.minimum')
+  const recommended = document.querySelector(".recommended")
+
+  const switchContainer = document.querySelector('.switch-container');
+  const exploreList = document.querySelectorAll('.explore-list__set');
+  const recomendedSettings = ['Intel i9-3500k (1 core 5.3 GHz) or AMD Ryzen 5 1200 (5 core 5.1 GHz)','16 GB','Windows 11 64-bit','NVIDIA GTX 1260 (8 GB) or AMD R9 290X (8 GB)','7.1','8.1','120 GB','8 GB']
+  const firstRecomendedSettings = ['Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)','8 GB','Windows 10 64-bit','NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)','5.1','5.1','70 GB','4 GB']
+
+  let counter = 0;
+  switchContainer.addEventListener('click', function(){
+    counter++
+    if (counter % 2 === 0){
+      minimum.classList.remove('switch-active')
+      recommended.classList.add('switch-active')
+      exploreList.forEach(function(element,index){
+        element.textContent = recomendedSettings[index]
+      })
+    } else {
+      recommended.classList.remove('switch-active')
+      minimum.classList.add('switch-active')
+      exploreList.forEach(function(element,index){
+        element.textContent = firstRecomendedSettings[index]
+      })
+    }
+  })
+
+  const standard = document.querySelector('.standard')
+  const limited = document.querySelector('.limited')
+
+  const switchRagnarContainer = document.querySelector(".switch-container-ragnar")
+  const exploreCharacteristicsList = document.querySelector(".switch-list__char")
+  const limitedSettings = ['PS5', '20.4.2018', 'Sony Interactive Entertainment Europe', 'Action, Adventure', 'English, Polish, Russian',  'English, Dutch, Polish, Russian, Turkish']
+  const firstLimitedSettings = ['PS4', '7.12.2022', 'Xbox Game Studios', 'Ubisoft', 'Italian, Chineese, Ukrainian', 'Arabic, Spanish, German, Indonesian, Hindi']
+
+  let counterFirst = 0;
+  switchRagnarContainer.addEventListener('click', function(){
+    counterFirst++
+    if (counter % 2 === 0){
+      standard.classList.remove('switch-active')
+      limited.classList.add('switch-active')
+      exploreCharacteristicsList.forEach(function(element,index){
+        element.textContent = limitedSettings[index]
+      })
+    } else {
+      recommended.classList.remove('switch-active')
+      minimum.classList.add('switch-active')
+      exploreList.forEach(function(element,index){
+        element.textContent = firstLimitedSettings[index]
+      })
+    }
+  })
+  //explore - end
 }

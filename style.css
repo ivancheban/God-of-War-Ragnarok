@@ -793,6 +793,15 @@ input[type="checkbox"]:checked + .switch-container .switch-circle,input[type="ch
   margin-top: 25px;
 }
 
+.explore-switch-bar__item {
+  color: #30373F;
+  transition: all .5s
+}
+
+.switch-active{
+  color:#fff;
+}
+
 .explore-headline, .explore-text {
   text-align: center;
   color: #fff;
