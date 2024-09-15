@@ -1,9 +1,34 @@
 <section class="trailer" id="trailer">
+  <div class="trailer-backdrop">
     <div class="trailer-inner-container">
-        <h2 class="trailer-title">About Game</h2>
-        <div class="video-div">
+      <h2 class="trailer-title">About Game</h2>
+      <div id="content"></div>
+      <!-- appending video here -->
+      <hr />
+      <!-- written in html -->
+      <video
+        id="example_video_by_hand"
+        class="video-js vjs-default-skin"
+        controls
+        width="640"
+        height="264"
+        poster="../images/trailer/trailer-bg.jpg"
+        preload="auto"
+        data-setup="{}"
+      >
+        <source type="video/mp4" src="../images/trailer/video.mp4" />
+      </video>
+      <div class="video-div">
         <h3 class="trailer-text">Watch the Trailer</h3>
-        <button type="button" class="trailer-btn">PLAY</button>
+        <button
+          type="button"
+          class="trailer-btn"
+          data-open-video
+          src="https://youtu.be/K0u_kAWLJOA?si=gVXsX9Jka-bsyjHY"
+        >
+          PLAY
+        </button>
+      </div>
     </div>
-</div>
-    </section>
+  </div>
+</section>
