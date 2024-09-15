@@ -241,22 +241,20 @@ function initializeModal() {
     source;
 
 obj = document.createElement('video');
-$(obj).attr('id', 'example_video_test');
-$(obj).attr('class', 'video-js vjs-default-skin');
-$(obj).attr('width', '640');
-$(obj).attr('data-height', '264');
-$(obj).attr('controls', ' ');
-$(obj).attr('poster', '../images/trailer/trailer-bg.jpg');
-$(obj).attr('preload', 'auto');
-$(obj).attr('data-setup', '{}');
+obj.setAttribute('id', 'example_video_test');
+obj.setAttribute('class', 'video-js vjs-default-skin');
+obj.setAttribute('width', '640');
+obj.setAttribute('data-height', '264');
+obj.setAttribute('controls', ' ');
+obj.setAttribute('poster', '../images/trailer/trailer-bg.jpg');
+obj.setAttribute('preload', 'auto');
+obj.setAttribute('data-setup', '{}');
 
 source = document.createElement('source');
-$(source).attr('type', 'video/mp4');
-$(source).attr('src', '../images/trailer/video.mp4');
-
-$("#content").append(obj);
-$(obj).append(source);
+source.setAttribute('type', 'video/mp4');
+source.setAttribute('src', '../images/trailer/video.mp4');
+document.getElementById('content').append(obj)
 // trailer - end
 }
   
-}
+
