@@ -98,6 +98,17 @@ top: 0px;
   box-shadow: inset 89px -120px 250px #1c2023;
   pointer-events: none; /* чтобы псевдоэлемент не мешал взаимодействию с изображением */
 }
+
+.img-container::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(./images/hero/snow.gif) no-repeat center/cover;
+  width: 1150px;
+  height: 700px;
+}
+
 .inner-container{
   margin-left: 282px;
   margin-right: 217px;
